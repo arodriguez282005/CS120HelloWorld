@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+int main ()
+{
+    //print the summation of 10 inputs
+    int i = 0;
+    int sum = 0;
+    int in;
+
+
+    while (i < 10)
+    {
+        cout << "Enter your value #" << i << endl;
+        cin >> in;
+        sum = sum + in;
+        i = i + 1;
+        cout << "Sum " << sum << "i " << i << endl;
+    }
+    cout << sum << endl;
+}
