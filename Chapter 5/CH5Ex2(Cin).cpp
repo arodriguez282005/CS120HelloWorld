@@ -8,13 +8,11 @@ int main ()
     int in;
 
 
-    while (i < 10)
+    while (i++ < 10)
     {
         cout << "Enter your value #" << i << endl;
         cin >> in;
-        sum = sum + in;
-        i = i + 1;
-        cout << "Sum " << sum << "i " << i << endl;
+        sum += in;
     }
-    cout << sum << endl;
+    cout << "Sum is " << sum << endl;
 }
