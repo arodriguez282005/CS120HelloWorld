@@ -9,7 +9,7 @@ int main ()
     printElement(number, N);
 }
     
-void printElement(int *number, int N)
+void printElement(int number[], int N)
 {
     for(int i=0; i<N;i++){
         if(i==1){
