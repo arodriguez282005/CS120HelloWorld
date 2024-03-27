@@ -20,6 +20,15 @@ int main()
         cout << vec5[i] << "\t";
     }
 
-    for(int v: vec5)
+    for(int v: vec5) // works in c++ compilers 2011 0r later
         cout << v << "\t";
+
+    // Iterator
+    vector<int>::iterator it;
+    for(it = vec5.begin(); it != vec5.end(); it++)
+        cout << *it << "\t";
+
+    it = vec5.begin();
+    vec5.insert(it, 100);
+
 }
